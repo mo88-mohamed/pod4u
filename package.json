@@ -2,7 +2,7 @@
   "name": "pod4u",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mo88-mohamed.github.io/pod4u",
+  "homepage": "https://mo88-mohamed.github.io/pod4u/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
