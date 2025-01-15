@@ -19,7 +19,7 @@ const Slide = ({image = 'https://placehold.co/150x150' ,title,author,feedID, aut
 
 
             </div> */}
-        <Card.Root cursor={'pointer'} padding={'10px'} margin={0} paddingTop={0} rounded={'xl'} justifyContent={'center'} alignItems={'center'} backgroundColor={'transparent'} border={'none'} onClick={()=>{navigate(`/podcast/${feedID}`)}}>
+        <Card.Root cursor={'pointer'} padding={'10px'} margin={0} paddingTop={0} rounded={'xl'} justifyContent={'center'} alignItems={'center'} backgroundColor={'transparent'} border={'none'} onClick={()=>{navigate(`/pod4u/podcast/${feedID}`)}}>
             <Card.Header></Card.Header>
             <LazyLoadImage width={'200px'} height={'200px'} rounded={'xl'} src={image} alt={title} placeholderSrc={img}/>
             <Card.Body textAlign={'center'}>

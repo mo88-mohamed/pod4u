@@ -11,7 +11,8 @@ const Search = () => {
     const {getData} = useApi();
     const url = backendUrls.search;
     const location =useLocation()
-    const query = location.pathname.split('/')[2];
+    const path = location.pathname.split('/')[2];
+    const query = path[path.length-1];
     const [loading , setLoading] = useState(true)
 
     useEffect(()=>{

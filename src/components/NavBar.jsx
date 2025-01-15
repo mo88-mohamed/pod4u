@@ -15,11 +15,11 @@ const NavbBar = () => {
     const navigate = useNavigate();
 
     const searchHandle = ()=>{
-        navigate(`/search/${query}`);
+        navigate(`/pod4u/search/${query}`);
     }
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
-          navigate(`/search/${query}`);
+          navigate(`/pod4u/search/${query}`);
         }
       }
 
@@ -60,7 +60,7 @@ const NavbBar = () => {
                         </DrawerContent>
 
                     </Drawer.Root> */}
-                    <Text textDecoration={'none'} cursor={'pointer'} color={'white'} _hover={{color:'white'}} fontSize={'2.5rem'} onClick={()=>{navigate('/')}}>Pod4u</Text>
+                    <Text textDecoration={'none'} cursor={'pointer'} color={'white'} _hover={{color:'white'}} fontSize={'2.5rem'} onClick={()=>{navigate('/pod4u')}}>Pod4u</Text>
                 </Flex>
                 <Flex className="search" alignItems={'center'} width={'100%'}>
                     <Input type="text" placeholder="Search" rounded={'3xl'} value={query} onKeyDown={handleKeyDown} onChange={(e)=>{setQuery(e.target.value)}} />

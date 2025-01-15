@@ -160,7 +160,7 @@ const AudioPlayerControls = ({ isPlaying, setIsPlaying, audioRef }) => {
         <Flex alignItems={'center'} gap={'20px'}>
             {/* <Button width={0} rounded={'3xl'} padding={0}> */}
                 {/* <FaBackward width={size} height={size} style={{margin:0}} /> */}
-                <TbRewindBackward10  width={size} height={size} onClick={
+                <TbRewindBackward10 cursor={'pointer'}  width={size} height={size} onClick={
                     ()=>{
                         if (audioRef.current) {
                             audioRef.current.currentTime = audioRef.current.currentTime - 10;
@@ -172,11 +172,11 @@ const AudioPlayerControls = ({ isPlaying, setIsPlaying, audioRef }) => {
             {/* <Button rounded={'3xl'} padding={0} onClick={() => { */}
                {/* togglePLay();  */}
             {/* }}> */}
-                {isPlaying ? <FaPause width={size} height={size} onClick={togglePLay} /> : <FaPlay width={size} height={size} onClick={togglePLay} />}
+                {isPlaying ? <FaPause cursor={'pointer'}  width={size} height={size} onClick={togglePLay} /> : <FaPlay cursor={'pointer'}  width={size} height={size} onClick={togglePLay} />}
             {/* </Button> */}
             {/* <Button rounded={'3xl'} padding={0}> */}
                 {/* <FaForward width={size} height={size} /> */}
-                <TbRewindForward10  width={size} height={size} onClick={()=>{
+                <TbRewindForward10  cursor={'pointer'} width={size} height={size} onClick={()=>{
                     if (audioRef.current) {
                         audioRef.current.currentTime = audioRef.current.currentTime + 10;
                 }

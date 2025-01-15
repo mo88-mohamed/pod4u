@@ -18,10 +18,11 @@ const Slider = ({data}) => {
         autoplay={{ delay: 2500, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
+        
+     //    onSwiper={(swiper) => console.log(swiper)}
+     //    onSlideChange={() => console.log('slide change')}
         // style={{backgroundColor:'blue'}}
-        style={{padding:'0 20px 20px 20px'}}
+        style={{padding:'0 20px 20px 20px',justifyContent:'center',alignItems:'center'}}
       >
           
  

@@ -20,7 +20,8 @@ const Podcast = ({}) => {
     const {getData} = useApi();
     const podcastMetaDataUrl = backendUrls.podcastData;
     const podcastEpisodesUrl = backendUrls.podcastEpisodes;
-    const podcastID = location.pathname.split('/')[2];
+    const path = location.pathname.split('/');
+    const podcastID = path[path.length-1];
     const [loading , setLoading] = useState(true);
     // console.log(podcastID);
     // console.log(location.pathname.split('/'));
@@ -97,7 +98,7 @@ export const PodcatsItem = ({ title, image,date, description ,url ,feedID ,type=
                 setAudioName(title);
             }
             else{
-                navigate(`/podcast/${feedID}`);
+                navigate(`/pod4u/podcast/${feedID}`);
             }
         }} >
         <LazyLoadImage src={image?image:"https://placehold.co/150x150"} alt="podcast" width={'150px'} placeholderSrc={img}/>

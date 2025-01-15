@@ -19,10 +19,10 @@ function App() {
   return (
     <>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/pod4u" element={<Home />} />
           {/* <Route path='/podcast' element={<Podcast />} /> */}
-          <Route path='/podcast/:id' element={<Podcast />} />
-          <Route path ='/search/:query' element={<Search />} />
+          <Route path='/pod4u/podcast/:id' element={<Podcast />} />
+          <Route path ='/pod4u/search/:query' element={<Search />} />
           <Route path='*' element={<Home />} />
         </Routes>
       {/* <Home /> */}
