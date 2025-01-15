@@ -19,14 +19,10 @@ export default defineConfig(({ mode }) => {
   // const env = loadEnv(mode, process.cwd(), '');
   // console.log(env)
   return {
-    // define: {
-    //   'process.env.SOME_KEY': JSON.stringify(env.SOME_KEY),
-    //   'process.env.API_KEY':"'NDPRDASGDUAGXDCFC8VM'",
-    //   'process.env.API_SECRET':"' JBuBpbc89dwxTmFeywNF#vV3f3Z#cxs$e9YFwU#2'",
-    // },
+
     plugins: [
       react(),
-      // nodePolyfills()
     ],
+    base:'pod4u'
   }
 })
