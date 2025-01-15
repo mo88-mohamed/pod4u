@@ -3,7 +3,7 @@ import { Box, Flex, Spinner } from "@chakra-ui/react"
 const Loading = () => {
 
     return(
-        <Box position='fixed' zIndex='overlay' w='100vw' h='100vh' top='0' left='0' overflow='hidden' colorPalette={'gray'} >
+        <Box position='fixed' zIndex='overlay' w='100vw' h='100vh' top='0' left='0' overflow='hidden' backgroundColor={'rgba(30,30,30,0.7)'} >
         <Flex w='100%' h='100%' justifyContent='center' alignItems='center'>
           <Spinner
             thickness='4px'
